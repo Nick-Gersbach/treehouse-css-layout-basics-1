@@ -1,0 +1,68 @@
+/* Global Settings */
+
+/* To add a full image to the background of a site you need can add the background image to the html tag since it is the parent of the body */
+
+/* html {
+  background: url(https://westernnews.media.clients.ellingtoncms.com/img/photos/2018/11/29/DSC_0643-Rio.jpg) no-repeat center center/cover;
+} */
+
+/* Giving your wrapper/container to the body tag saves you from having to add another div to your code */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  color: #3A3A3A;
+}
+
+.container {
+  padding: 0 1em;
+}
+
+h1 {
+  margin: 0;
+} 
+
+/* Header Styling */
+
+.main-header {
+  background: #3ACEC2;
+  padding: 1em 0;
+}
+
+.main-header  h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-header  ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Footer Styling */
+
+.main-footer {
+  padding: 2em;
+  background: #D9E4EA;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 769px) {
+  
+  .wrap {
+    min-height: calc(100vh - 89px);
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 70%;
+  }
+}
